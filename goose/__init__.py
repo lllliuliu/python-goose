@@ -40,6 +40,9 @@ class Goose(object):
         self.initialize()
 
     def extend_config(self):
+        """\
+        Merge Config
+        """
         if isinstance(self.config, dict):
             config = Configuration()
             for k, v in self.config.items():
